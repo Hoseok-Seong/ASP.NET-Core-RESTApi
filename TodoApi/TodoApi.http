@@ -1,0 +1,31 @@
+﻿@TodoApi_HostAddress = https://localhost:7195
+
+POST {{TodoApi_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"강아지 산책시키기",
+  "isComplete":true
+}
+
+
+###
+
+GET {{TodoApi_HostAddress}}/todoitems
+
+###
+
+GET {{TodoApi_HostAddress}}/todoitems/2
+
+###
+
+PUT {{TodoApi_HostAddress}}/todoitems/{id}
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "강아지 산책시키기",
+  "isComplete": false
+}
+
+###
