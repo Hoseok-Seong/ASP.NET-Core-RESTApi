@@ -19,7 +19,7 @@ GET {{TodoApi_HostAddress}}/todoitems/2
 
 ###
 
-PUT {{TodoApi_HostAddress}}/todoitems/{id}
+PUT {{TodoApi_HostAddress}}/todoitems/1
 Content-Type: application/json
 
 {
@@ -27,5 +27,13 @@ Content-Type: application/json
   "name": "강아지 산책시키기",
   "isComplete": false
 }
+
+###
+
+DELETE {{TodoApi_HostAddress}}/todoitems/3
+
+###
+
+GET {{TodoApi_HostAddress}}/todoitems/complete
 
 ###
